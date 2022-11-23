@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { NavbarItems } from '../Navbar/NavbarData';
 import '../../Components/Styles/navbar.scss';
 
 function Navbar() {
+  const [state, setState] = useState(false);
+  const handleClick = () => {
+    setState(!state);
+  };
+  console.log(state);
+
   return (
-    <div className="navbar">
-      <div className="circle"></div>
+    <div className={state ? "navbar active" : "navbar"}>
+      <div className={state ? "menu-open active" : "menu-open"} onClick={handleClick}>
+        <div className="menu-line menu-line-1"></div>
+        <div className="menu-line menu-line-2"></div>
+        <div className="menu-line menu-line-3"></div>
+      </div>
       <h1>Corestudio</h1>
       {NavbarItems.map((item, index) => {
         return (

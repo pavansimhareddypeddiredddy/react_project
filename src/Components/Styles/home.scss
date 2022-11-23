@@ -1,106 +1,104 @@
-.home {
-  position: relative;
-  width: 100%;
-  .gallery-item {
-    @include flex(space-evenly);
-    width: 70%;
-    margin: 0 30rem;
-    img {
-      width: 50%;
-      height: 100vh;
+.gallery-item {
+  @include flex(space-evenly);
+  width: 70%;
+  margin: 0 30rem;
+  height: 100%;
+
+  img {
+    width: 50%;
+    height: 100%;
+  }
+  .right-side {
+    @include flex(center);
+    width: 50%;
+    padding: 4rem;
+    color: white;
+    flex-direction: column;
+
+    h3 {
+      color: $gray;
+      font-size: 1.5rem;
     }
-    .right-side {
-      @include flex(center);
-      width: 50%;
-      padding: 4rem;
-      color: white;
-      flex-direction: column;
 
-      h3 {
-        color: $gray;
-        font-size: 1.5rem;
+    h1 {
+      color: $white;
+      font-size: 4rem;
+    }
+
+    p {
+      position: relative;
+      padding: 1.6rem 0 2rem 1.7rem;
+      font-size: 1.5rem;
+      color: $gray;
+
+      &::before {
+        content: '';
+        position: absolute;
+        height: 60px;
+        width: 2px;
+        background-color: $yellow;
+        left: 0;
+        top: 2rem;
       }
+    }
 
-      h1 {
-        color: $white;
-        font-size: 4rem;
-      }
+    button {
+      text-align: center;
+      width: 200px;
+      padding: 1px;
+      background-color: transparent;
+      color: $yellow;
+      border: 1px solid $yellow;
+      letter-spacing: 4px;
+      font-weight: 800;
+      box-shadow: 2px 2px 2px $yellow;
+      cursor: pointer;
 
-      p {
-        position: relative;
-        padding: 1.6rem 0 2rem 1.7rem;
-        font-size: 1.5rem;
-        color: $gray;
-
-        &::before {
-          content: '';
-          position: absolute;
-          height: 60px;
-          width: 2px;
-          background-color: $yellow;
-          left: 0;
-          top: 2rem;
-        }
-      }
-
-      button {
-        text-align: center;
-        width: 200px;
-        padding: 1px;
-        background-color: transparent;
-        color: $yellow;
-        border: 1px solid $yellow;
-        letter-spacing: 4px;
-        font-weight: 800;
-        box-shadow: 2px 2px 2px $yellow;
-        cursor: pointer;
-
-        &:active {
-          box-shadow: none;
-          transform: translate(2px, 2px);
-        }
+      &:active {
+        box-shadow: none;
+        transform: translate(2px, 2px);
       }
     }
   }
+}
 
-  .gallery-item-reverse {
-    @extend .gallery-item;
-    flex-direction: row-reverse;
-    .right-side {
-      @include flex(center, flex-end, right);
-      p {
-        padding: 1.6rem 1.7rem 2rem 0;
+.gallery-item-reverse {
+  @extend .gallery-item;
+  flex-direction: row-reverse;
+  .right-side {
+    @include flex(center, flex-end, right);
+    p {
+      padding: 1.6rem 1.7rem 2rem 0;
 
-        &::before {
-          display: none;
-        }
+      &::before {
+        display: none;
+      }
 
-        &::after {
-          content: '';
-          position: absolute;
-          height: 60px;
-          width: 2px;
-          background-color: $yellow;
-          top: 2rem;
-          right: 0;
-        }
+      &::after {
+        content: '';
+        position: absolute;
+        height: 60px;
+        width: 2px;
+        background-color: $yellow;
+        top: 2rem;
+        right: 0;
       }
     }
   }
+}
 
-  .more-button {
-    width: 40%;
-    height: 50px;
-    margin: 2rem 0 2rem 40%;
-    background-color: $yellow;
-    cursor: pointer;
-    box-shadow: 3px 3px 0px $white;
-    font-size: 1.5rem;
-    font-weight: 700;
+.more-button {
+  width: 40%;
+  height: 50px;
+  margin: 2rem 0 2rem 40%;
+  background-color: $yellow;
+  cursor: pointer;
+  box-shadow: 3px 3px 0px $white;
+  font-size: 1.5rem;
+  font-weight: 700;
 
-    &:active {
-      box-shadow: none;
-      transform: translate(3px, 3px);
-    }
+  &:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
   }
 }
