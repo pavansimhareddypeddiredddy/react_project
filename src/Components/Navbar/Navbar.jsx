@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { NavbarItems } from '../Navbar/NavbarData';
+import { NavbarItems } from '../NavbarData';
 import '../../Components/Styles/navbar.scss';
 
 function Navbar() {
@@ -8,11 +8,13 @@ function Navbar() {
   const handleClick = () => {
     setState(!state);
   };
-  console.log(state);
 
   return (
-    <div className={state ? "navbar active" : "navbar"}>
-      <div className={state ? "menu-open active" : "menu-open"} onClick={handleClick}>
+    <div className={state ? 'navbar active' : 'navbar'}>
+      <div
+        className={state ? 'menu-open active' : 'menu-open'}
+        onClick={handleClick}
+      >
         <div className="menu-line menu-line-1"></div>
         <div className="menu-line menu-line-2"></div>
         <div className="menu-line menu-line-3"></div>
