@@ -1,0 +1,66 @@
+@import '../Styles/components.scss';
+
+.photo-gallery {
+  width: calc(100% - (400px));
+  margin-left: 400px;
+  @include flex(flex);
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &-item {
+    width: calc(100% / 3);
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    .details {
+      opacity: 0;
+      @include position(absolute, $top: 50%, $left: 50%);
+      transform: translate(-50%, -50%);
+      user-select: none;
+      transition: opacity 0.3s;
+
+      h3 {
+        color: $gray;
+        font-size: 2rem;
+      }
+
+      h1 {
+        color: $white;
+        font-size: 3rem;
+      }
+
+      button {
+        padding: 1px 10px;
+        background-color: transparent;
+        color: $yellow;
+        border: 1px solid $yellow;
+        letter-spacing: 4px;
+        font-weight: 400;
+        box-shadow: 2px 2px 2px $yellow;
+        cursor: pointer;
+        text-transform: uppercase;
+
+        &:active {
+          box-shadow: none;
+          transform: translate(2px, 2px);
+        }
+      }
+    }
+
+    &:hover .details {
+      opacity: 1;
+    }
+    &:hover img {
+      transform: scale(1.05);
+      filter: blur(2px);
+    }
+  }
+}

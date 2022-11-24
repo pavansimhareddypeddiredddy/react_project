@@ -20,7 +20,7 @@ function Home() {
               <motion.div
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ y: '0', opacity: 1 }}
-                transition={{ type: 'linear', duration: 1, delay: 0.5 }}
+                transition={{ type: 'linear', duration: 1, delay: 0.2 }}
                 className="right-side"
               >
                 <h3>{item?.type}</h3>

@@ -5,6 +5,7 @@ import Gallery from './Pages/Gallery/Gallery';
 import About from './Pages/About/About';
 import Pricing from './Pages/Pricing/Pricing';
 import Contact from './Pages/Contact/Contact';
+import PhotoPage from './Components/PhotoPage/PhotoPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/gallery' element={<Gallery />}/>
+        <Route path='/gallery/:photo_id' element={<PhotoPage />}/>
         <Route path='/about' element={<About />}/>
         <Route path='/pricing' element={<Pricing />}/>
         <Route path='/contact' element={<Contact />}/>

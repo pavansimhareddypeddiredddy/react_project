@@ -1,0 +1,77 @@
+@import '../Styles/components.scss';
+
+.photo-page {
+  margin-top: 3rem;
+  width: calc(100% - (400px));
+  display: flex;
+  flex-direction: column;
+  margin-left: 400px;
+
+  .image {
+    width: 60%;
+    height: 80vh;
+    margin: auto;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .image-details {
+    margin: 2rem auto;
+    width: 50%;
+    h1 {
+      font-size: 5rem;
+      color: $white;
+    }
+
+    p {
+      color: $gray;
+      font-size: 1.6rem;
+      margin-top: 1rem;
+    }
+
+    .categories {
+      width: 100%;
+      margin-top: 2rem;
+      span {
+        color: $white;
+        padding: 5px 10px;
+        margin: 5px;
+        border: 1px solid $gray;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .photographer {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: 2rem auto;
+    height: 20vh;
+    border: 1px solid $yellow;
+    padding: 10px;
+    background-color: black;
+
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+
+    &-detail {
+        padding: 1rem 3rem;
+        color: $white;
+        h1 {
+            font-size: 2rem;
+        }
+        p{
+            color: $gray;
+        }
+
+    }
+  }
+}
