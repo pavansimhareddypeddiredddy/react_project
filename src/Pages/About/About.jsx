@@ -12,7 +12,7 @@ function About() {
       <img
         className="poster"
         src="https://images.unsplash.com/photo-1613052182267-ea06867f2b48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
-        alt=""
+        alt="about us poster"
       />
       <div className="info">
         <h1>

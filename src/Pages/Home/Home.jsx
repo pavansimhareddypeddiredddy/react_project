@@ -7,23 +7,24 @@ import ScrollIntoView from '../../Components/ScrollToTop';
 function Home() {
   const imagePerPage = 4;
   const [next, setNext] = useState(imagePerPage);
-  const size = Object.keys(HomeItems).length;
+  const size = Object.keys(HomeItems).length; // Object Length
   const handleMoreImage = () => {
     setNext(next + imagePerPage);
   };
 
   return (
-    <>
-      {HomeItems.slice(0, next).map((item) => {
-        if ((item.id % 2 === 0) === false) {
+    <div className="home-page">
+      {HomeItems?.slice(0, next).map((item) => {
+        if ((item?.id % 2 === 0) === false) {
+          //item id divisible by 2. If the answer is false it is added to the gallery item. If it is true, it is added to the reverse
           return (
-            <div className="gallery-item" key={item.id}>
+            <div className="gallery-item" key={item?.id}>
               <motion.img
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ type: 'linear', duration: 1 }}
                 src={item?.imgSrc}
-                alt=""
+                alt={item?.title}
               />
               <motion.div
                 initial={{ opacity: 0, y: 100 }}
@@ -42,13 +43,13 @@ function Home() {
           );
         } else {
           return (
-            <div className="gallery-item-reverse" key={item.id}>
+            <div className="gallery-item-reverse" key={item?.id}>
               <motion.img
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ type: 'linear', duration: 1 }}
                 src={item?.imgSrc}
-                alt=""
+                alt={item?.title}
               />
               <motion.div
                 initial={{ opacity: 0, y: 100 }}
@@ -74,7 +75,7 @@ function Home() {
         </button>
       )}
       <ScrollIntoView />
-    </>
+    </div>
   );
 }
 

@@ -4,11 +4,12 @@ import { PhotoItems } from '../PhotosData';
 import ScrollIntoView from '../ScrollToTop';
 
 function PhotoPage() {
+  // I used photo id to pull the items from js file. 
   const { photo_id } = useParams();
-  const id = photo_id - 1;
+  const id = photo_id - 1; //
   const item = PhotoItems[id];
   const hashtags = item.hashtags;
-  const hashtag = hashtags.split(',');
+  const hashtag = hashtags.split(','); // to separate hashtags
 
   return (
     <>

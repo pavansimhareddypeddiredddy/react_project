@@ -21,13 +21,13 @@ function Gallery() {
             whileInView={{ opacity: 1 }}
             transition={{ type: 'linear', duration: 1, delay: 0.2 }}
             className="photo-gallery-item"
-            key={item.photo_id}
+            key={item?.photo_id}
           >
-            <img src={item.imgSrc} alt="" />
+            <img src={item?.imgSrc} alt={item?.title} />
             <div className="details">
-              <h3>{item.type}</h3>
-              <h1>{item.title}</h1>
-              <Link to={`/gallery/${item.photo_id}`} item={item}>
+              <h3>{item?.type}</h3>
+              <h1>{item?.title}</h1>
+              <Link to={`/gallery/${item?.photo_id}`}>
                 <button>View Image</button>
               </Link>
             </div>

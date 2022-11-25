@@ -4,6 +4,7 @@ $yellow: #f3c623;
 $white: #d4d4d4;
 $gray: #5c5c5c;
 $black: rgb(17, 17, 17);
+$red: rgb(136, 18, 18);
 
 @mixin flex($justify: none, $align: none, $text: none) {
   display: flex;
