@@ -7,3 +7,7 @@
 ### The Gallery page contains photos taken. If we press the button that appears when we hover the photo, the details of the photo and the information about the person who took it appear.
 
 ### The About page contains a little information about the company and current photographers. The pricing page has details about events and fees. The Contact page also has a form and ways to contact. The form does not submit when there are empty spaces.
+
+
+https://user-images.githubusercontent.com/84937009/203981327-37ea476c-a25c-4742-9392-5475a836b0d6.mp4
+
