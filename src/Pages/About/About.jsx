@@ -19,9 +19,8 @@ function About() {
           Hello! I'm <span>Emre Ates</span> the CEO of a Corestudio Photography
         </h1>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem iste
-          sit perspiciatis non quos nisi quam libero, iure labore
-          exercitationem.
+          Corestudio, which was established in 2020, has taken part in many
+          events and organizations, has a professional team and is here for you.
         </p>
         <h1 className="team-text">Our Team</h1>
         <div className="our-team">
