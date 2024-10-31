@@ -21,7 +21,7 @@ function Navbar() {
         <div className="menu-line menu-line-3"></div>
       </div>
 
-      <h1>Corestudio</h1>
+      <h1>Ramu studio</h1>
       <ul>
         {NavbarItems.map((item, index) => {
           return (
@@ -57,7 +57,7 @@ function Navbar() {
         <h2>Subscribe for newsletter</h2>
         <input type="text" placeholder="Enter Email Address" />
         <p>
-          Copyright &#169;2022 All rights reserved | This template is made by
+          Copyright &#169;2024 All rights reserved | This template is made by
           Secenory
         </p>
       </div>

@@ -16,10 +16,10 @@ function About() {
       />
       <div className="info">
         <h1>
-          Hello! I'm <span>Emre Ates</span> the CEO of a Corestudio Photography
+          Hello! I'm <span>Rama chandra</span> the CEO of a Ramustudio Photography
         </h1>
         <p>
-          Corestudio, which was established in 2020, has taken part in many
+          Ramustudio, which was established in Aug-1986, has taken part in many
           events and organizations, has a professional team and is here for you.
         </p>
         <h1 className="team-text">Our Team</h1>

@@ -11,7 +11,6 @@ function Home() {
   const handleMoreImage = () => {
     setNext(next + imagePerPage);
   };
-
   return (
     <div className="home-page">
       {HomeItems?.slice(0, next).map((item) => {
@@ -35,8 +34,8 @@ function Home() {
                 <h3>{item?.type}</h3>
                 <h1>{item?.title}</h1>
                 <p>{item?.text}</p>
-                <Link to="/gallery">
-                  <button className="button">View Portfolio</button>
+                <Link to="/signup">
+                  <button className="button">Sign Up</button>
                 </Link>
               </motion.div>
             </div>

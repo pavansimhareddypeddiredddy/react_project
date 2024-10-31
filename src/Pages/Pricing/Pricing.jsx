@@ -40,7 +40,7 @@ function Pricing() {
               </div>
               <div className="price-item">
                 <h2>Term</h2>
-                <h3>14 Days</h3>
+                <h3>{item.days}</h3>
               </div>
 
               <h1>{item.price}</h1>
